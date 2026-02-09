@@ -1,0 +1,8 @@
+#include <stdio.h>
+int main()
+{
+    float variable;
+     variable = 8.25;
+    printf("%.2f", variable);
+    return 0;
+}
