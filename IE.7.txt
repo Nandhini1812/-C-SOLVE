@@ -1,0 +1,20 @@
+#include <stdio.h>
+int main() {
+    char input_char;
+    printf("Alphabet, Digit, or Special Character: ");
+    scanf("%c", &input_char);
+    
+    if (input_char >= 48 && input_char <= 57)
+    {
+        printf("Digit");
+    } 
+    else if  ((input_char >= 65 && input_char <= 90) || (input_char >= 97 && input_char <= 122)) 
+    {
+        printf("Alphabet");
+    }
+    else 
+    {
+        printf("Special Character");
+    }
+    return 0;
+}
