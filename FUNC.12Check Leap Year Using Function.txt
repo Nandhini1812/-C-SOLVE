@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+// Function to check leap year
+void checkLeapYear(int year) {
+    if ((year % 400 == 0) || (year % 4 == 0 && year % 100 != 0))
+        printf("Leap Year");
+    else
+        printf("Not Leap Year");
+}
+
+int main() {
+    int Year;
+    scanf("%d", &Year);
+    checkLeapYear(Year);
+    return 0;
+}
