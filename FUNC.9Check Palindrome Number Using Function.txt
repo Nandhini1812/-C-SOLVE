@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+// Function to check palindrome
+void checkPalindrome(int n) {
+    int original = n;
+    int rev = 0;
+    while (n > 0) {
+        rev = rev * 10 + (n % 10);
+        n /= 10;
+    }
+    if (original == rev)
+        printf("Palindrome");
+    else
+        printf("Not Palindrome");
+}
+
+int main() {
+    int N;
+    scanf("%d", &N);
+    checkPalindrome(N);
+    return 0;
+}
